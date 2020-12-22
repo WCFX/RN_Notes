@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { Container, NotesList } from './styles';
 
 import NoteItem from '../../components/NoteItem';
+import NoMoreNotes from '../../components/NoMoreNotes';
 
 const Home = () => {
   const list = useSelector((state) => state.notes.list);
@@ -16,7 +17,7 @@ const Home = () => {
   };
   return (
     <Container>
-      {list.length > 0 && (
+      {list.length > 1 && (
         <NotesList
           data={list}
           renderItem={({ item, index }) => (
@@ -25,6 +26,7 @@ const Home = () => {
           keyExtractor={(item, index) => index.toString()}
         />
       )}
+      {list.length == 0 && <NoMoreNotes />}
     </Container>
   );
 };

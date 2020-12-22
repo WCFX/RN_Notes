@@ -13,14 +13,16 @@ const { Navigator, Screen } = createStackNavigator();
 export default () => (
   <Navigator
     screenOptions={{
+      headerTransparent: true,
       headerStyle: {
         backgroundColor: '#323232',
       },
-      headerTintColor: '#e9e9e9',
-      headerTitleAlign: 'center',
+      headerTintColor: '#323232',
       headerTitleStyle: {
+        fontFamily: 'Sniglet-Regular',
+        fontSize: 34,
         elevation: 4,
-        fontWeight: 'bold',
+        // fontWeight: 'bold',
       },
     }}
   >
@@ -34,6 +36,7 @@ export default () => (
     />
     <Screen
       options={{
+        headerTitleAlign: 'center',
         headerTitle: 'Crie Suas Notas',
         headerLeft: () => <ButtonGoBack />,
       }}

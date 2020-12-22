@@ -12,7 +12,7 @@ const ButtonRight = () => {
   return (
     <ButtonAdd onPress={handleNavigateToCreateNote}>
       <ButtonAddText>
-        <Icon name="clipboard-pencil" size={24} color="#18b1c1" />
+        <Icon name="clipboard-pencil" size={24} color="#fcf0cc" />
       </ButtonAddText>
     </ButtonAdd>
   );

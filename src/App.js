@@ -13,8 +13,9 @@ export default () => (
     <PersistGate loading={null} persistor={persistor}>
       <NavigationContainer>
         <StatusBar
-          backgroundColor="rgba(24,177,193,0.11)"
           barStyle="light-content"
+          backgroundColor="#ffffff"
+          translucent
         />
         <Routes />
       </NavigationContainer>

@@ -1,11 +1,23 @@
 import React from 'react';
-import { Text } from 'react-native';
-import { Container, Title } from './styles';
+import {
+  Container,
+  ContainerImg,
+  NotesImg,
+  InfoContainer,
+  Title,
+  Description,
+  ButtonAdd,
+  ButtonAddText,
+} from './styles';
 
-const EditNote = () => (
+import notesImg from '../../assets/images/notes.png';
+
+const EditNotes = () => (
   <Container>
-    <Title>Editar Notas!</Title>
+    <ContainerImg>
+      <NotesImg source={notesImg} />
+    </ContainerImg>
   </Container>
 );
 
-export default EditNote;
+export default EditNotes;
