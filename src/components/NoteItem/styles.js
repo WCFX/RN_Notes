@@ -8,6 +8,7 @@ export const Box = styled.TouchableHighlight`
 `;
 
 export const Title = styled.Text`
-  font-size: 22px;
+  font-size: 26px;
+  font-family: Sniglet-Regular;
   color: #459999;
 `;
