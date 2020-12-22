@@ -6,7 +6,4 @@ export const Container = styled.View`
   align-items: center;
 `;
 
-export const NotesList = styled.FlatList`
-  flex: 1;
-  width: 100%;
-`;
+export const Title = styled.Text``;
