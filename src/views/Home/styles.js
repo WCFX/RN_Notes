@@ -4,6 +4,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
+  background-color: rgba(24, 177, 193, 0.15);
 `;
 
 export const NotesList = styled.FlatList`
