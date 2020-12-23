@@ -2,27 +2,29 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
+  width: 100%;
   background-color: #fff;
-`;
-
-export const ContainerForm = styled.View`
-  border: 3px solid red;
+  border-top-width: 4px;
+  border-style: solid;
+  border-color: #f99;
   margin-top: 60px;
-  height: 400px;
+  padding: 0 10px;
 `;
 export const Scroller = styled.ScrollView``;
 
-export const TitleInput = styled.TextInput``;
-
-export const BodyInput = styled.TextInput``;
-
-export const ContainerImg = styled.View`
-  flex: 1;
-  justify-content: flex-end;
-  align-items: flex-end;
+export const TitleInput = styled.TextInput`
+  font-size: 34px;
+  letter-spacing: 2px;
+  width: 100%;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
 `;
 
-export const NotesImg = styled.Image`
-  width: 500px;
-  height: 500px;
+export const BodyInput = styled.TextInput`
+  font-size: 28px;
+  /* padding: 20px 30px; */
+  /* width: 80%; */
+  /* height: 90%; */
+  /* border: 1px solid red; */
 `;

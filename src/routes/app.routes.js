@@ -7,6 +7,7 @@ import EditNote from '../views/EditNote';
 // components
 import ButtonAdd from '../components/ButtonRight';
 import ButtonGoBack from '../components/ButtonLeft';
+import ButtonSave from '../components/ButtonSave';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -39,6 +40,7 @@ export default () => (
         headerTitleAlign: 'center',
         headerTitle: 'Crie Suas Notas',
         headerLeft: () => <ButtonGoBack />,
+        headerRight: () => <ButtonSave />,
       }}
       name="EditNote"
       component={EditNote}
